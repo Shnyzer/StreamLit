@@ -2,8 +2,21 @@ import streamlit as st
 import numpy as np
 import pandas as pd 
 from streamlit_option_menu import option_menu
+import requests
+from streamlit_lottie import st_lottie
+from PIL import Image
 
 st.set_page_config(layout= "wide")
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_code = load_lottieurl ("https://lottie.host/677afcc3-42fb-4602-a75a-6d754897c22b/pFsY797vh1.json")
+image = Image.open("C:\\Users\\User\\Downloads\\MyFirstStreamLitApp\\Hirehub.png")
+
 
 st.title("My First Streamlit App")
 
@@ -89,7 +102,6 @@ if selected == 'Projects':
 elif selected == 'Contact':
     st.header("Contact Me")
     st.write("You can reach me at my email: fvilocuraii@gmail.com")
-    
     
 
 
