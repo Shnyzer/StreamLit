@@ -2,7 +2,6 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-
 st.title("My First Streamlit App")
 
 st.write("##")
@@ -10,7 +9,7 @@ st.subheader("Hello Everyone :wave: ")
 st.title("My Portfolio")
 st.write("Strong ability to gather and synthesize information while communicating results effectively and concisely in support of cooperative efforts.")
 
-tabs = st.tabs(["Personal Data", "Skills", "Languages"])
+tabs = st.tabs(["Personal Data", "Skills", "Languages", "Projects"])
 
 with tabs[0]:
     st.write("""
@@ -40,6 +39,26 @@ with tabs[2]:
              - Tagalog
              - Cebuano 
              """)
+
+with tabs[3]:
+    col3, col4, col5 = st.columns(3)
+    with col3:
+        st.image("EnergyWise.png")
+        st.write("""
+                EnergyWise: Progressive Thinking towards Energy Efficiency
+                """)
+    with col4:
+        st.image("HireHub.png")
+        st.write("""
+                 HireHub: Cebu Institute of Technology - University IT-Enabled Applicant Tracking System
+                 """)
+        
+    with col5:
+        st.image("TrafficScope.png")
+        st.write("""
+                 TrafficScope: Let's make your travel experience hassle-free!
+                 """)
+    
     
 st.write("---")
 
