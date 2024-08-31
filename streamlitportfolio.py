@@ -90,13 +90,17 @@ with st.container():
             
             st.write("""
                 - Cebu Institute of Technology - University
-                    - College - Bachelor of Science in Information Technology (Recent)
+                    - College - Bachelor of Science in Information Technology 
+                        - (Recent)
                 - Cebu Institute of Technology - University
-                    - Senior High School (2017 - 2019)
+                    - Senior High School 
+                        - (2017 - 2019)
                 - Cebu Institute of Technology - University
-                    - Junior High School (2013 - 2017)
+                    - Junior High School 
+                        - (2013 - 2017)
                 - Cebu Institute of Technology - University
-                    - Elementary (2007 - 2013)
+                    - Elementary 
+                        - (2007 - 2013)
             """)
 
     with col2:
